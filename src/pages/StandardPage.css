@@ -1,0 +1,355 @@
+/* Standard Page Layout */
+.content-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-xl);
+}
+
+.content-main {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.content-main h2 {
+  color: var(--color-dark-text);
+  margin-bottom: var(--spacing-lg);
+}
+
+.content-main h3 {
+  color: var(--color-teal);
+  margin-top: var(--spacing-xl);
+  margin-bottom: var(--spacing-md);
+}
+
+.content-main h4 {
+  color: var(--color-dark-text);
+  margin-bottom: var(--spacing-sm);
+}
+
+.content-main p {
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin-bottom: var(--spacing-lg);
+}
+
+/* Expertise Grid */
+.expertise-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-lg);
+  margin: var(--spacing-xl) 0;
+}
+
+.expertise-item {
+  padding: var(--spacing-lg);
+  background-color: var(--color-light-bg);
+  border-radius: var(--radius-md);
+  border-left: 4px solid var(--color-cyan);
+  transition: all var(--transition-normal);
+}
+
+.expertise-item:hover {
+  transform: translateX(5px);
+  box-shadow: var(--shadow-md);
+}
+
+.expertise-item h4 {
+  color: var(--color-teal);
+  margin-bottom: var(--spacing-sm);
+}
+
+.expertise-item p {
+  color: var(--text-secondary);
+  font-size: var(--font-size-sm);
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* CTA Box */
+.cta-box {
+  background: linear-gradient(135deg, var(--color-cyan) 0%, var(--color-teal) 100%);
+  padding: var(--spacing-xl);
+  border-radius: var(--radius-lg);
+  text-align: center;
+  margin-top: var(--spacing-3xl);
+  color: var(--color-white);
+}
+
+.cta-box h3 {
+  color: var(--color-white);
+  margin: 0 0 var(--spacing-sm) 0;
+}
+
+.cta-box p {
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: var(--spacing-lg);
+}
+
+/* Treatment Details */
+.treatment-overview {
+  background-color: var(--color-light-bg);
+  padding: var(--spacing-xl);
+  border-radius: var(--radius-lg);
+  margin: var(--spacing-xl) 0;
+}
+
+.treatment-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--spacing-lg);
+  margin: var(--spacing-xl) 0;
+}
+
+.stat-item {
+  text-align: center;
+  padding: var(--spacing-lg);
+  background-color: var(--color-white);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.stat-number {
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-cyan);
+  display: block;
+  margin-bottom: var(--spacing-xs);
+}
+
+.stat-label {
+  color: var(--text-secondary);
+  font-size: var(--font-size-sm);
+}
+
+/* Process Steps */
+.process-steps {
+  margin: var(--spacing-xl) 0;
+}
+
+.process-step {
+  display: flex;
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-xl);
+  padding: var(--spacing-lg);
+  background-color: var(--color-white);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-normal);
+}
+
+.process-step:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateX(5px);
+}
+
+.step-number {
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, var(--color-cyan) 0%, var(--color-teal) 100%);
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-white);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-xl);
+}
+
+.step-content h4 {
+  margin-top: 0;
+  color: var(--color-dark-text);
+}
+
+.step-content p {
+  margin: 0;
+  color: var(--text-secondary);
+}
+
+/* FAQ Section */
+.faq-section {
+  margin: var(--spacing-xl) 0;
+}
+
+.faq-item {
+  background-color: var(--color-white);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-lg);
+  margin-bottom: var(--spacing-md);
+  box-shadow: var(--shadow-sm);
+  border-left: 4px solid var(--color-cyan);
+}
+
+.faq-question {
+  color: var(--color-dark-text);
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: var(--spacing-sm);
+}
+
+.faq-answer {
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* Blog Grid */
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--spacing-xl);
+  margin-top: var(--spacing-xl);
+}
+
+.blog-card {
+  background-color: var(--color-white);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition-normal);
+  text-decoration: none;
+  color: var(--text-primary);
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-xl);
+}
+
+.blog-image {
+  width: 100%;
+  height: 200px;
+  background-color: var(--color-light-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-cyan);
+  font-size: var(--font-size-sm);
+}
+
+.blog-content {
+  padding: var(--spacing-lg);
+}
+
+.blog-date {
+  color: var(--color-cyan);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  margin-bottom: var(--spacing-sm);
+}
+
+.blog-card h3 {
+  color: var(--color-dark-text);
+  margin-bottom: var(--spacing-sm);
+  font-size: var(--font-size-lg);
+}
+
+.blog-excerpt {
+  color: var(--text-secondary);
+  font-size: var(--font-size-sm);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Contact Form */
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: var(--spacing-lg);
+}
+
+.form-label {
+  display: block;
+  color: var(--color-dark-text);
+  font-weight: var(--font-weight-medium);
+  margin-bottom: var(--spacing-xs);
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: var(--spacing-sm) var(--spacing-md);
+  border: 2px solid var(--color-light-bg);
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-base);
+  font-family: inherit;
+  transition: border-color var(--transition-fast);
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  outline: none;
+  border-color: var(--color-cyan);
+}
+
+.form-textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+/* Contact Info Grid */
+.contact-info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-lg);
+  margin: var(--spacing-xl) 0;
+}
+
+.contact-info-item {
+  padding: var(--spacing-lg);
+  background-color: var(--color-light-bg);
+  border-radius: var(--radius-md);
+  text-align: center;
+}
+
+.contact-icon {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, var(--color-cyan) 0%, var(--color-teal) 100%);
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto var(--spacing-md);
+  color: var(--color-white);
+}
+
+.contact-info-item h3 {
+  color: var(--color-dark-text);
+  margin-bottom: var(--spacing-sm);
+}
+
+.contact-info-item p {
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .expertise-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .treatment-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .process-step {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .step-number {
+    margin: 0 auto;
+  }
+
+  .blog-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-info-grid {
+    grid-template-columns: 1fr;
+  }
+}
