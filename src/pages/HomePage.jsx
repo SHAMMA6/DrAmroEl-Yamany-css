@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import PageLayout from '../components/PageLayout';
 import Button from '../components/Button';
+import VideoTestimonialsSection from '../components/VideoTestimonialsSection';
 import './HomePage.css';
 
 const HomePage = () => {
@@ -115,6 +116,9 @@ const HomePage = () => {
           </div>
         </div>
       </section>
+
+      {/* Video Testimonials */}
+      <VideoTestimonialsSection />
 
       {/* CTA Section */}
       <section className="cta-section section">
